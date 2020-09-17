@@ -58,7 +58,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='\[\e[0;41m\]\u\[\e[0m\][\[\e[0;38;5;183m\]\W\[\e[0m\]]\[\e[0m\]$\[\e0'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -120,9 +120,13 @@ fi
 eval "`dircolors -b ~/.dircolorsrc`"
 export LS_OPTIONS='--color=auto'
 
+#alias sistema de archivos
+alias df='df -h' 
+
 #alias abreviaciones
 alias c='clear'
 alias h='history'
+
 
 #alias para navegacion
 alias ..='cd ..'
