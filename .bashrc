@@ -76,7 +76,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+    alias ls='ls --color=auto -lah'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -120,11 +120,18 @@ fi
 eval "`dircolors -b ~/.dircolorsrc`"
 export LS_OPTIONS='--color=auto'
 
+#alias abreviaciones
 alias c='clear'
 alias h='history'
+
+#alias para navegacion
+alias ..='cd ..'
+alias ...='cd ../..' 
 
 #alias nas bicon
 alias montar-thor='/home/lapi/script/montar-thor.sh'
 alias desmontar-thor='/home/lapi/script/desmontar-thor.sh'
+
+
 
 source /home/lapi/.config/broot/launcher/bash/br
