@@ -132,10 +132,4 @@ alias h='history'
 alias ..='cd ..'
 alias ...='cd ../..' 
 
-#alias nas bicon
-alias montar-thor='/home/lapi/script/montar-thor.sh'
-alias desmontar-thor='/home/lapi/script/desmontar-thor.sh'
-
-
-
 #source /home/lapi/.config/broot/launcher/bash/br
