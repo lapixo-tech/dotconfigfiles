@@ -58,7 +58,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\e[0;41m\]\u\[\e[0m\][\[\e[0;38;5;183m\]\W\[\e[0m\]]\[\e[0m\]$\[\e0'
+    PS1='\[\e[0;4;53;41m\]\u\[\e[0;2;30;107m\][\[\e[0;1;30;107m\]\W\[\e[0;30;107m\]]\[\e[0m\]$\[\e0'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -138,4 +138,4 @@ alias desmontar-thor='/home/lapi/script/desmontar-thor.sh'
 
 
 
-source /home/lapi/.config/broot/launcher/bash/br
+#source /home/lapi/.config/broot/launcher/bash/br
