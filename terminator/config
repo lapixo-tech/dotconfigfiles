@@ -2,12 +2,12 @@
   window_state = maximise
 [keybindings]
 [profiles]
-  [[default]]
+  [[lapi]]
     background_color = "#282828"
     cursor_color = "#aaaaaa"
     foreground_color = "#ebdbb2"
     show_titlebar = False
-  [[lapi]]
+  [[default]]
     background_color = "#222831"
     cursor_shape = ibeam
     cursor_color = "#aaaaaa"
@@ -45,7 +45,7 @@
       type = Terminal
       parent = child1
       order = 0
-      profile = lapi
+      profile = default
       uuid = 2a8cb39d-964c-4793-9f96-4fdf6e38ebf1
     [[[child3]]]
       type = VPaned
@@ -57,12 +57,12 @@
       type = Terminal
       parent = child3
       order = 0
-      profile = lapi
+      profile = default
       uuid = 89be5e74-2610-4f65-afcc-f44cf027c882
     [[[terminal5]]]
       type = Terminal
       parent = child3
       order = 1
-      profile = lapi
+      profile = default
       uuid = 47ff4c48-4f58-4fce-82f8-881aef93b354
 [plugins]
